@@ -8,9 +8,8 @@
    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-   <header>
-        <h1>Mijn kledingkast</h1> 
+<body id="outfits">
+   <header> 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,54 +20,178 @@
      </nav>   
    </header>
    <main>
-    <h2>outfits</h2>
-         <img src="images/bloemfit.jpg" alt="">
-         <img src="images/bloembroekcollage.jpg" alt="">
-         <!--bron van audio tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio-->
-         <figure>
-            <figcaption>See You Again - Tyler, The Creator feat. Kali Uchis</figcaption>
-               <audio controls src="audio/tyler.mp3"></audio>
-         </figure>
-      <h3>fit 1</h3>
+    <h2>Outfits</h2>
+      <p>Dit is een pagina waarin je een aantal van mijn outfits kan bekijken. Deze outfits zijn voorzien met een lijst van de zichtbare kledingstukken en een liedje die de sfeer van de outfit naar voren brengt.</p>
+      <h3>Outfit 1</h3>
+         <div>
+            <img src="images/bloemfit.jpg" alt="foto van outfit met een wit t-shirt en bloemtjesbroek">
+            <img src="images/bloembroekcollage.jpg" alt="collage van de items in de outfit">
+            <section>
+               <details>
+                  <!--bron die ik heb gebruikt voor summary:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary-->
+                  <summary>Kledingstukken in deze outfit</summary>
+                     <ul>
+                        <li>Carhartt WIP service T-shirt wit</li>
+                        <li>Butter Goods Flower Jeans</li>
+                     </ul>
+               </details>
+               <h4>De sfeer bij deze outfit</h5>
+                  <!--bron van audio tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio-->
+                  <figure>
+                     <figcaption>See You Again - Tyler, The Creator feat. Kali Uchis</figcaption>
+                        <audio controls src="audio/tyler.mp3"></audio>
+                  </figure>
+               <h4>Vind je deze outfit mooi?</h4>
+               <!--bron die ik heb gebruikt voor de label tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label-->
+                  <div>
+                     <label for="ja">Ja</label>
+                     <input type="checkbox" name="ja"/>
+                  </div>
+                  <div>
+                     <label for="nee">Nee</label>
+                     <input type="checkbox" name="nee"/>
+                  </div>
+            </section>
+         </div>      
+      
+      <h3>Outfit 2</h3>
+         <div>  
+            <div>
+               <img src="images/cardiganfit.jpg" alt="foto van outfit met een cardigan en een cargobroek">   
+            </div>
+            <div>
+               <img src="images/cardiganfitcollage.jpg" alt="collage van de items in de outfit">               
+            </div>
+            <section>
+               <details>
+                  <summary>Kledingstukken in deze outfit</summary>
+                     <ul>
+                        <li>Carhartt WIP service T-shirt wit</li>
+                        <li>Bilionaire Boys Club Puzzle Pardigan</li>
+                        <li>Carhartt Wip aviation cargo's</li>
+                  </ul>
+               </details>
+               <h4>De sfeer bij deze outfit</h5>
+                  <figure>
+                     <figcaption>So Fresh, So Clean - Outkast</figcaption>
+                        <audio controls src="audio/outkast.mp3"></audio>
+                  </figure>
+                  <h4>Vind je deze outfit mooi?</h4>
+                  <div>
+                     <label for="ja">Ja</label>
+                     <input type="checkbox" name="ja"/>
+                   </div>
+                   <div>
+                     <label for="nee">Nee</label>
+                     <input type="checkbox" name="nee"/>
+                   </div>
+            </section>   
+         </div>
+      
+      <h3>Outfit 3</h3>
+         <div>
+            <div>
+               <img src="images/groenefit.jpg" alt="foto van outfit met een groene trui en een cargobroek">
+            </div>
+            <div>
+               <img src="images/groeneoutfitcollage.jpg" alt="collage van de items in de outfit">
+            </div>
+            <section>
+               <details>
+                  <summary>Kledingstukken in deze outfit</summary>
+                     <ul>
+                        <li>Stussy Strand Sweater</li>
+                        <li>Carhartt WIP aviation cargo's</li>
+                     </ul>
+               </details>
+               <h4>De sfeer bij deze outfit</h5>   
+               <figure>
+                     <figcaption>drive ME crazy! - Lil Yachty</figcaption>
+                        <audio controls src="audio/lilyachty.mp3"></audio>
+               </figure>
+               <h4>Vind je deze outfit mooi?</h4>
+                  <div>
+                     <label for="ja">Ja</label>
+                     <input type="checkbox" name="ja"/>
+                  </div>
+                  <div>
+                     <label for="nee">Nee</label>
+                     <input type="checkbox" name="nee"/>
+                  </div>
+            </section>
+         </div>
 
-         <img src="images/cardiganfit.jpg" alt="">
-         <img src="images/cardiganfitcollage.jpg" alt="">
-         <figure>
-            <figcaption>So Fresh, So Clean - Outkast</figcaption>
-               <audio controls src="audio/outkast.mp3"></audio>
-         </figure>
-      <h3>fit 2</h3>
-
-         <img src="images/groenefit.jpg" alt="">
-         <img src="images/groeneoutfitcollage.jpg" alt="">
-            <figure>
-               <figcaption>drive ME crazy! - Lil Yachty</figcaption>
-                  <audio controls src="audio/lilyachty.mp3"></audio>
-            </figure>
-      <h3>fit 3</h3>
-
-         <img src="images/baseballfit.jpg" alt="">
-         <img src="images/baseballfitcollage.jpg" alt="">
-         <figure>
-            <figcaption>Hyena - Travis Scott</figcaption>
-               <audio controls src="audio/travis.mp3"></audio>
-         </figure>
-      <h3>fit 4</h3>
-
-         <img src="images/hoodiefit.jpg" alt="">
-         <img src="images/hoodiefitcollage.jpg" alt="">
-         <figure>
-            <figcaption>All Caps - MF DOOM</figcaption>
-               <audio controls src="audio/madvillain.mp3"></audio>
-         </figure>
-      <h3>fit 5</h3>
+      <h3>Outfit 4</h3>
+         <div>
+            <div>
+               <img src="images/baseballfit.jpg" alt="foto van outfit met een baseball shirt en een korte broek">               
+            </div>
+            <div>
+               <img src="images/baseballfitcollage.jpg" alt="collage van de items in de outfit">              
+            </div>
+            <section>
+               <details>
+                  <summary>Kledingstukken in deze outfit</summary>
+                     <ul>
+                        <li>Carhartt WIP zwart T-shirt</li>
+                        <li>Undefeated Baseball shirt</li>
+                        <li>Vans shorts</li>
+                     </ul>
+               </details>
+               <h4>De sfeer bij deze outfit</h5>
+                  <figure>
+                     <figcaption>Hyena - Travis Scott</figcaption>
+                     <audio controls src="audio/travis.mp3"></audio>
+               </figure>
+               <h4>Vind je deze outfit mooi?</h4>
+               <div>
+                  <label for="ja">Ja</label>
+                  <input type="checkbox" name="ja"/>
+               </div>
+               <div>
+                  <label for="nee">Nee</label>
+                  <input type="checkbox" name="nee"/>
+               </div>
+            </section>
+         </div>
+            
+      <h3>Outfit 5</h3> 
+         <div>          
+            <div>
+               <img src="images/hoodiefit.jpg" alt="foto van outfit met een hoodie en een tuinbroek">
+            </div>
+            <div>
+               <img src="images/hoodiefitcollage.jpg" alt="collage van de items in de outfit">
+            </div>
+            <section>
+               <details>
+                  <summary>Kledingstukken in deze outfit</summary>
+                     <ul>
+                        <li>Carhartt WIP Bib overall</li>
+                        <li>Carhartt WIP hoodie</li>
+                     </ul>
+               </details>
+               <h4>De sfeer bij deze outfit</h5>         
+               <figure>
+                  <figcaption>All Caps - MF DOOM</figcaption>
+                     <audio controls src="audio/madvillain.mp3"></audio>
+               </figure>
+               <h4>Vind je deze outfit mooi?</h4>
+               <div>
+                  <label for="ja">Ja</label>
+                  <input type="checkbox" name="ja"/>
+               </div>
+               <div>
+                  <label for="nee">Nee</label>
+                  <input type="checkbox" name="nee"/>
+               </div>
+            </section>
+         </div>
    </main>
    <footer>
-      <ul>
-         <li>contact</li>
-         <li>email</li>
-         <li>telefoon</li>
-      </ul>    
+      <h2>Website door Thomas Plas</h2>
+      <h3>Brondvermelding</h3>
+      <p>De muziek: <a href="https://www.spotify.com/nl/premium/?utm_source=nl_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_europe_nl_performancemarketing_core_brand+contextual+text+exact+nl+google&gad=1&gclid=CjwKCAjwyY6pBhA9EiwAMzmfwdLPEfnpQ2ok4V80WFBHxTTXLVNGlTjxEskf-LjW0dHPx4R7FGQJMxoCsCkQAvD_BwE&gclsrc=aw.ds">https://www.spotify.com/nl/premium/?utm_source=nl_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_europe_nl_performancemarketing_core_brand+contextual+text+exact+nl+google&gad=1&gclid=CjwKCAjwyY6pBhA9EiwAMzmfwdLPEfnpQ2ok4V80WFBHxTTXLVNGlTjxEskf-LjW0dHPx4R7FGQJMxoCsCkQAvD_BwE&gclsrc=aw.ds</a></p>
    </footer>
 </body>
 </html>

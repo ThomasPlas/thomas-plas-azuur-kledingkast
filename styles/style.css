@@ -1,28 +1,19 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-body{background-color: white;}
+body{background-color: rgb(255, 255, 255);}
 
 /* header */
 header{
     background-image:url("../images/achtergrond.jpg")} 
 
-header {
+header{
     padding: 5em;
 }
 
-    header h1{
-        background: rgb(239, 223, 102);
-        font-size: 100%;
-        color: black;
-        padding: 1em 3em;
-        border: 0,3em solid black;
-        border-radius: 15px 50px;
-        text-transform: uppercase;
-    }
-    
     header ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;}
 
     header li{
@@ -33,12 +24,9 @@ header {
         border-radius: 15px 50px;
         list-style: none;
         transition: background 200ms ease;
-        margin-left: 3em;
-    }
-
-    header a {
-        text-decoration: none;
-        text-transform: uppercase;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 2em;
     }
 
     header li:hover{
@@ -46,56 +34,162 @@ header {
         transform: scale(1.1); 
     }
 
-/*foto's*/
-    img{
-        border: 3px solid rgb(233, 233, 233);
-        border-radius: 15px;
+    header a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    header a:link{
+        color: black;
+    }
+
+    header a:visited{
+        color: black;
     }
 
 /*footer*/    
 footer{
-    background-image:url("../images/achtergrond.jpg")}
+    background-color: rgb(239, 223, 102);
+}
+
+footer>h2{
+    text-align: center;
+    margin-top: 2em;
+}
+
+footer>h3{
+    text-align: center;
+    margin-top: 2em;  
+}
+
+footer>p{
+    text-align: center;   
+}
+
+/*foto's*/
+img{
+    border: 3px solid rgb(233, 233, 233);
+    border-radius: 15px;
+    max-width: 100%;
+}    
 
 
 /*dit is voor index.html*/
+h1{
+    background: rgb(239, 223, 102);
+    font-size: x-large;
+    color: black;
+    padding: 1em 3em;
+    border: 0,3em solid black;
+    border-radius: 15px 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+#home h2,h3,p{
+    text-align: center;
+}
 
+#home h4{
+    white-space: pre;
+}
 
 video {
     width: 100%;
     height: 20%;
 }
 
-div {
+#home div{
+    flex-wrap: nowrap;    
     display: flex;
     justify-content: center;
 }
 
-section{
-    min-width: 30%;
+#home main :nth-child(7){
+    flex-wrap: wrap;
+}
+
+#home section{
+    min-width: 20%;
     margin: 1em;
 }
         
-img{
-    max-width: 100%;
-}    
-
 a img:hover{
     transform: scale(1.1);
 }
 
-/*dit is voor pagina 2*/
-
-.knop{
-    background: rgb(239, 223, 102);
-    color: black;
-    padding: 1em 3em;
-    border: 0,3em solid black;
-    border-radius: 15px 50px;
-    text-transform: uppercase;
+/* dit is voor pagina 2 */
+#kleding h2{
+    text-align: center;
 }
 
-span{
-    margin: 3em;
-    text-decoration: none;
+#kleding div{
+    flex-wrap: wrap;    
+    display: flex;
+    justify-content: center;
+}
+
+#kleding section{
+    margin: 1em;
+}
+
+/* dit is voor pagina 3 */
+#outfits div{
+    flex-wrap: wrap;    
+    display: flex;
+    justify-content: baseline;
+}
+
+#outfits img{
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+#outfits h3{
+    text-align: start;
+}
+
+#outfits section > h4{
+    text-align: left;
+}
+
+
+#outfits p{
+    text-align: start;
+    max-width: 650px;
+}
+/* dit is voor pagina 4 */
+#overconsumptie h2,h3,h4{
+    text-align: center;
+}
+
+#overconsumptie p{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#overconsumptie em{
+    text-emphasis-style: none;
+}
+
+iframe{
+    margin: auto;
+    display: block;
+}
+
+#overconsumptie div{
+    text-align: center
+}
+
+#overconsumptie div > ul{
+    display: inline-block;
+    text-align: left;
 }
