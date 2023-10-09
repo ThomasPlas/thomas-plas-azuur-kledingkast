@@ -20,7 +20,6 @@ header{
         background: rgb(239, 223, 102);
         color: black;
         padding: 1em 3em;
-        border: 0,3em solid black;
         border-radius: 15px 50px;
         list-style: none;
         transition: background 200ms ease;
@@ -80,7 +79,6 @@ h1{
     font-size: x-large;
     color: black;
     padding: 1em 3em;
-    border: 0,3em solid black;
     border-radius: 15px 50px;
     text-transform: uppercase;
     text-align: center;
@@ -92,6 +90,7 @@ h1{
 
 #home h4{
     white-space: pre;
+    text-align: left;
 }
 
 video {
@@ -137,7 +136,7 @@ a img:hover{
 #outfits div{
     flex-wrap: wrap;    
     display: flex;
-    justify-content: baseline;
+    justify-content: left;
 }
 
 #outfits img{
@@ -183,6 +182,8 @@ label {
 iframe{
     margin: auto;
     display: block;
+    width: 560px; 
+    height: 315px;
 }
 
 #overconsumptie div{
